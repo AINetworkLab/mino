@@ -1,0 +1,139 @@
+./responder_all.sh: line 7: ./_doca_rdma_write_responder2_100M: Permission denied
+[16:06:39:668125][387123][DOCA][INF][rdma_write_responder_my.c:130][rdma_write_responder_my] Starting the sample
+[16:06:39:668174][387123][DOCA][INF][rdma_write_responder_my.c:132][rdma_write_responder_my] [初始化 rdma           ] 用时: 0.05 ms
+[16:06:39:670010][387124][DOCA][INF][rdma_write_responder_my.c:130][rdma_write_responder_my] Starting the sample
+[16:06:39:670055][387124][DOCA][INF][rdma_write_responder_my.c:132][rdma_write_responder_my] [初始化 rdma           ] 用时: 0.05 ms
+[16:06:39:670410][387121][DOCA][INF][rdma_write_responder_my.c:130][rdma_write_responder_my] Starting the sample
+[16:06:39:670448][387121][DOCA][INF][rdma_write_responder_my.c:132][rdma_write_responder_my] [初始化 rdma           ] 用时: 0.04 ms
+[16:07:19:854874][387121][DOCA][WRN][doca_mmap.cpp:2026][mmap_set_memrange] Mmap 0x64a58bd28e40: Memory range isn't aligned to 64B - addr=0x7092e73fe010. For best performance using CPU memory, align address to 64B (cache-line size). For best performance using GPU memory, align address to 64KB (page size)
+Server waiting for client connection on port 18700...
+Client connected from 192.168.200.1:38162
+TCP_NODELAY is enabled
+[16:07:19:883131][387121][DOCA][INF][rdma_common.c:1747][config_rdma_cm_callback_and_negotiation_task] 成功执行到这里，config_rdma_cm_callback_and_negotiation_task
+[16:07:19:884460][387121][DOCA][INF][rdma_write_responder_sample.c:351][rdma_write_responder_state_change_callback] RDMA context is running
+[16:07:19:884486][387121][DOCA][INF][rdma_common.c:1184][rdma_cm_connect] Using RDMA_CM to setup RDMA connection
+[16:07:19:884497][387121][DOCA][INF][rdma_common.c:1204][rdma_cm_connect] -----------------------------------------------
+[16:07:19:884506][387121][DOCA][INF][rdma_common.c:1205][rdma_cm_connect] RDMA_CM connection params:
+[16:07:19:884516][387121][DOCA][INF][rdma_common.c:1206][rdma_cm_connect] -- Connection Role: Server
+[16:07:19:884526][387121][DOCA][INF][rdma_common.c:1207][rdma_cm_connect] -- Addr_type : 0
+[16:07:19:884536][387121][DOCA][INF][rdma_common.c:1208][rdma_cm_connect] -- Addr: NULL
+[16:07:19:884545][387121][DOCA][INF][rdma_common.c:1209][rdma_cm_connect] -- Port: 13780
+[16:07:19:884555][387121][DOCA][INF][rdma_common.c:1210][rdma_cm_connect] -- Num_connections: 1
+[16:07:19:884564][387121][DOCA][INF][rdma_common.c:1211][rdma_cm_connect] -----------------------------------------------
+[16:07:19:884573][387121][DOCA][INF][rdma_common.c:1219][rdma_cm_connect] Server calling doca_rdma_start_listen_to_port
+[16:07:19:884582][387121][DOCA][INF][rdma_common.c:1220][rdma_cm_connect] rdma 的值为: 0x70936a93d010
+[16:07:19:884592][387121][DOCA][INF][rdma_common.c:1221][rdma_cm_connect] cm_port 的值为: 13780
+[16:07:19:884666][387121][DOCA][INF][rdma_common.c:1251][rdma_cm_connect] [Server] started connection successfully
+[16:07:19:884678][387121][DOCA][INF][rdma_write_responder_sample.c:359][rdma_write_responder_state_change_callback] RDMA context finished initialization
+[16:07:19:884688][387121][DOCA][INF][rdma_write_responder_sample.c:480][rdma_write_responder] remote_mmap_descriptor= (nil) remote_mmap=(nil)
+[16:07:20:203019][387121][DOCA][INF][rdma_common.c:1406][rdma_responder_send_data_to_rdma_requester] Start to exchange data resource between client and server
+[16:07:20:203158][387121][DOCA][WRN][doca_mmap.cpp:2026][mmap_set_memrange] Mmap 0x64a58bd34900: Memory range isn't aligned to 64B - addr=0x64a58bd2a110. For best performance using CPU memory, align address to 64B (cache-line size). For best performance using GPU memory, align address to 64KB (page size)
+[16:07:20:203846][387121][DOCA][INF][rdma_common.c:1463][rdma_responder_send_data_to_rdma_requester] Wait till the requester has finished the submission of the receive task for negotiation and press enter
+[16:07:20:203872][387121][DOCA][INF][rdma_common.c:1468][rdma_responder_send_data_to_rdma_requester] [等待元数据交换控制信息耗时：] 用时: 0.01 ms
+[16:07:20:203939][387121][DOCA][INF][rdma_write_responder_sample.c:227][responder_wait_for_requester_finish_chunked] 开始接收分块数据
+[16:07:20:203975][387121][DOCA][INF][rdma_write_responder_sample.c:239][responder_wait_for_requester_finish_chunked] 等待第 1 块数据
+[16:07:20:223259][387121][DOCA][INF][rdma_write_responder_sample.c:243][responder_wait_for_requester_finish_chunked] [等待 块数据 耗时  ] 用时: 19.27 ms
+[16:07:20:223284][387121][DOCA][INF][rdma_write_responder_sample.c:244][responder_wait_for_requester_finish_chunked] 收到写完成信号
+[16:07:20:223294][387121][DOCA][INF][rdma_write_responder_sample.c:251][responder_wait_for_requester_finish_chunked] 接收到块 1/1，数据大小: 46830571，总数据: 46830571，是否最后: 1
+[16:07:20:223304][387121][DOCA][INF][rdma_write_responder_sample.c:260][responder_wait_for_requester_finish_chunked] 预计接收 1 块，总大小 46830571 字节
+[16:07:20:283603][387121][DOCA][INF][rdma_write_responder_sample.c:281][responder_wait_for_requester_finish_chunked] [读取 块数据 耗时  ] 用时: 60.31 ms
+[16:07:20:283634][387121][DOCA][INF][rdma_write_responder_sample.c:282][responder_wait_for_requester_finish_chunked] 已接收 1/1 块，累计数据: 46830571 字节
+[16:07:20:283685][387121][DOCA][INF][rdma_write_responder_sample.c:288][responder_wait_for_requester_finish_chunked] 已发送第 1 块的 ACK
+[16:07:20:283691][387121][DOCA][INF][rdma_write_responder_sample.c:292][responder_wait_for_requester_finish_chunked] 接收完成，总共 1 块，46830571 字节
+[16:07:20:283696][387121][DOCA][INF][rdma_write_responder_sample.c:298][responder_wait_for_requester_finish_chunked] [分块接收总耗时    ] 用时: 79.72 ms
+[16:07:20:283702][387121][DOCA][INF][rdma_write_responder_sample.c:302][responder_wait_for_requester_finish_chunked] ✓ 数据接收完整: 46830571 字节
+[16:07:20:283706][387121][DOCA][INF][rdma_write_responder_sample.c:312][responder_wait_for_requester_finish_chunked] 最终接收数据大小: 46830571
+[16:07:20:287126][387121][DOCA][INF][rdma_common.c:1269][rdma_cm_disconnect] [Server] successfully disconnect rdma-cm connection
+[16:07:20:287162][387121][DOCA][INF][rdma_write_responder_sample.c:374][rdma_write_responder_state_change_callback] RDMA context entered into stopping state. Any inflight tasks will be flushed
+[16:07:20:287896][387121][DOCA][INF][rdma_write_responder_sample.c:379][rdma_write_responder_state_change_callback] RDMA context has been stopped
+[16:07:20:349785][387121][DOCA][ERR][doca_argp.cpp:2532][doca_argp_destroy] Module is not ready for use
+[16:07:20:349812][387121][DOCA][INF][rdma_write_responder_my.c:149][rdma_write_responder_my] Sample finished successfully
+[16:07:20:355359][387123][DOCA][WRN][doca_mmap.cpp:2026][mmap_set_memrange] Mmap 0x60fcdba3ee40: Memory range isn't aligned to 64B - addr=0x79d8865fe010. For best performance using CPU memory, align address to 64B (cache-line size). For best performance using GPU memory, align address to 64KB (page size)
+Server waiting for client connection on port 18702...
+Client connected from 192.168.200.1:58112
+TCP_NODELAY is enabled
+[16:07:20:382954][387123][DOCA][INF][rdma_common.c:1747][config_rdma_cm_callback_and_negotiation_task] 成功执行到这里，config_rdma_cm_callback_and_negotiation_task
+[16:07:20:384257][387123][DOCA][INF][rdma_write_responder_sample.c:351][rdma_write_responder_state_change_callback] RDMA context is running
+[16:07:20:384282][387123][DOCA][INF][rdma_common.c:1184][rdma_cm_connect] Using RDMA_CM to setup RDMA connection
+[16:07:20:384292][387123][DOCA][INF][rdma_common.c:1204][rdma_cm_connect] -----------------------------------------------
+[16:07:20:384299][387123][DOCA][INF][rdma_common.c:1205][rdma_cm_connect] RDMA_CM connection params:
+[16:07:20:384306][387123][DOCA][INF][rdma_common.c:1206][rdma_cm_connect] -- Connection Role: Server
+[16:07:20:384314][387123][DOCA][INF][rdma_common.c:1207][rdma_cm_connect] -- Addr_type : 0
+[16:07:20:384322][387123][DOCA][INF][rdma_common.c:1208][rdma_cm_connect] -- Addr: NULL
+[16:07:20:384329][387123][DOCA][INF][rdma_common.c:1209][rdma_cm_connect] -- Port: 13820
+[16:07:20:384352][387123][DOCA][INF][rdma_common.c:1210][rdma_cm_connect] -- Num_connections: 1
+[16:07:20:384359][387123][DOCA][INF][rdma_common.c:1211][rdma_cm_connect] -----------------------------------------------
+[16:07:20:384367][387123][DOCA][INF][rdma_common.c:1219][rdma_cm_connect] Server calling doca_rdma_start_listen_to_port
+[16:07:20:384374][387123][DOCA][INF][rdma_common.c:1220][rdma_cm_connect] rdma 的值为: 0x79d909e51010
+[16:07:20:384381][387123][DOCA][INF][rdma_common.c:1221][rdma_cm_connect] cm_port 的值为: 13820
+[16:07:20:384452][387123][DOCA][INF][rdma_common.c:1251][rdma_cm_connect] [Server] started connection successfully
+[16:07:20:384461][387123][DOCA][INF][rdma_write_responder_sample.c:359][rdma_write_responder_state_change_callback] RDMA context finished initialization
+[16:07:20:384470][387123][DOCA][INF][rdma_write_responder_sample.c:480][rdma_write_responder] remote_mmap_descriptor= (nil) remote_mmap=(nil)
+[Responder:13780] 接收到 46830571 字节, MD5: e0b1c919e74f9a193d36871d9964bf7d
+[16:07:20:597857][387123][DOCA][INF][rdma_common.c:1406][rdma_responder_send_data_to_rdma_requester] Start to exchange data resource between client and server
+[16:07:20:597994][387123][DOCA][WRN][doca_mmap.cpp:2026][mmap_set_memrange] Mmap 0x60fcdba4a900: Memory range isn't aligned to 64B - addr=0x60fcdba40110. For best performance using CPU memory, align address to 64B (cache-line size). For best performance using GPU memory, align address to 64KB (page size)
+[16:07:20:598644][387123][DOCA][INF][rdma_common.c:1463][rdma_responder_send_data_to_rdma_requester] Wait till the requester has finished the submission of the receive task for negotiation and press enter
+[16:07:20:598666][387123][DOCA][INF][rdma_common.c:1468][rdma_responder_send_data_to_rdma_requester] [等待元数据交换控制信息耗时：] 用时: 0.01 ms
+[16:07:20:598761][387123][DOCA][INF][rdma_write_responder_sample.c:227][responder_wait_for_requester_finish_chunked] 开始接收分块数据
+[16:07:20:598770][387123][DOCA][INF][rdma_write_responder_sample.c:239][responder_wait_for_requester_finish_chunked] 等待第 1 块数据
+[16:07:20:614611][387123][DOCA][INF][rdma_write_responder_sample.c:243][responder_wait_for_requester_finish_chunked] [等待 块数据 耗时  ] 用时: 15.83 ms
+[16:07:20:614639][387123][DOCA][INF][rdma_write_responder_sample.c:244][responder_wait_for_requester_finish_chunked] 收到写完成信号
+[16:07:20:614649][387123][DOCA][INF][rdma_write_responder_sample.c:251][responder_wait_for_requester_finish_chunked] 接收到块 1/1，数据大小: 46830571，总数据: 46830571，是否最后: 1
+[16:07:20:614658][387123][DOCA][INF][rdma_write_responder_sample.c:260][responder_wait_for_requester_finish_chunked] 预计接收 1 块，总大小 46830571 字节
+[16:07:20:676147][387123][DOCA][INF][rdma_write_responder_sample.c:281][responder_wait_for_requester_finish_chunked] [读取 块数据 耗时  ] 用时: 61.50 ms
+[16:07:20:676184][387123][DOCA][INF][rdma_write_responder_sample.c:282][responder_wait_for_requester_finish_chunked] 已接收 1/1 块，累计数据: 46830571 字节
+[16:07:20:676241][387123][DOCA][INF][rdma_write_responder_sample.c:288][responder_wait_for_requester_finish_chunked] 已发送第 1 块的 ACK
+[16:07:20:676246][387123][DOCA][INF][rdma_write_responder_sample.c:292][responder_wait_for_requester_finish_chunked] 接收完成，总共 1 块，46830571 字节
+[16:07:20:676252][387123][DOCA][INF][rdma_write_responder_sample.c:298][responder_wait_for_requester_finish_chunked] [分块接收总耗时    ] 用时: 77.48 ms
+[16:07:20:676258][387123][DOCA][INF][rdma_write_responder_sample.c:302][responder_wait_for_requester_finish_chunked] ✓ 数据接收完整: 46830571 字节
+[16:07:20:676263][387123][DOCA][INF][rdma_write_responder_sample.c:312][responder_wait_for_requester_finish_chunked] 最终接收数据大小: 46830571
+[16:07:20:679530][387123][DOCA][INF][rdma_common.c:1269][rdma_cm_disconnect] [Server] successfully disconnect rdma-cm connection
+[16:07:20:679576][387123][DOCA][INF][rdma_write_responder_sample.c:374][rdma_write_responder_state_change_callback] RDMA context entered into stopping state. Any inflight tasks will be flushed
+[16:07:20:680278][387123][DOCA][INF][rdma_write_responder_sample.c:379][rdma_write_responder_state_change_callback] RDMA context has been stopped
+[16:07:20:714977][387124][DOCA][WRN][doca_mmap.cpp:2026][mmap_set_memrange] Mmap 0x5842d0577e40: Memory range isn't aligned to 64B - addr=0x7fedebdfe010. For best performance using CPU memory, align address to 64B (cache-line size). For best performance using GPU memory, align address to 64KB (page size)
+[16:07:20:739894][387123][DOCA][ERR][doca_argp.cpp:2532][doca_argp_destroy] Module is not ready for use
+[16:07:20:739925][387123][DOCA][INF][rdma_write_responder_my.c:149][rdma_write_responder_my] Sample finished successfully
+Server waiting for client connection on port 18803...
+Client connected from 192.168.200.1:38794
+TCP_NODELAY is enabled
+[16:07:20:762760][387124][DOCA][INF][rdma_common.c:1747][config_rdma_cm_callback_and_negotiation_task] 成功执行到这里，config_rdma_cm_callback_and_negotiation_task
+[16:07:20:763993][387124][DOCA][INF][rdma_write_responder_sample.c:351][rdma_write_responder_state_change_callback] RDMA context is running
+[16:07:20:764010][387124][DOCA][INF][rdma_common.c:1184][rdma_cm_connect] Using RDMA_CM to setup RDMA connection
+[16:07:20:764017][387124][DOCA][INF][rdma_common.c:1204][rdma_cm_connect] -----------------------------------------------
+[16:07:20:764022][387124][DOCA][INF][rdma_common.c:1205][rdma_cm_connect] RDMA_CM connection params:
+[16:07:20:764027][387124][DOCA][INF][rdma_common.c:1206][rdma_cm_connect] -- Connection Role: Server
+[16:07:20:764032][387124][DOCA][INF][rdma_common.c:1207][rdma_cm_connect] -- Addr_type : 0
+[16:07:20:764037][387124][DOCA][INF][rdma_common.c:1208][rdma_cm_connect] -- Addr: NULL
+[16:07:20:764042][387124][DOCA][INF][rdma_common.c:1209][rdma_cm_connect] -- Port: 13840
+[16:07:20:764047][387124][DOCA][INF][rdma_common.c:1210][rdma_cm_connect] -- Num_connections: 1
+[16:07:20:764051][387124][DOCA][INF][rdma_common.c:1211][rdma_cm_connect] -----------------------------------------------
+[16:07:20:764056][387124][DOCA][INF][rdma_common.c:1219][rdma_cm_connect] Server calling doca_rdma_start_listen_to_port
+[16:07:20:764061][387124][DOCA][INF][rdma_common.c:1220][rdma_cm_connect] rdma 的值为: 0x7fee7257f010
+[16:07:20:764066][387124][DOCA][INF][rdma_common.c:1221][rdma_cm_connect] cm_port 的值为: 13840
+[16:07:20:764118][387124][DOCA][INF][rdma_common.c:1251][rdma_cm_connect] [Server] started connection successfully
+[16:07:20:764128][387124][DOCA][INF][rdma_write_responder_sample.c:359][rdma_write_responder_state_change_callback] RDMA context finished initialization
+[16:07:20:764136][387124][DOCA][INF][rdma_write_responder_sample.c:480][rdma_write_responder] remote_mmap_descriptor= (nil) remote_mmap=(nil)
+[Responder:13820] 接收到 46830571 字节, MD5: e0b1c919e74f9a193d36871d9964bf7d
+[16:07:20:979814][387124][DOCA][INF][rdma_common.c:1406][rdma_responder_send_data_to_rdma_requester] Start to exchange data resource between client and server
+[16:07:20:979880][387124][DOCA][WRN][doca_mmap.cpp:2026][mmap_set_memrange] Mmap 0x5842d0583900: Memory range isn't aligned to 64B - addr=0x5842d0579110. For best performance using CPU memory, align address to 64B (cache-line size). For best performance using GPU memory, align address to 64KB (page size)
+[16:07:20:980506][387124][DOCA][INF][rdma_common.c:1463][rdma_responder_send_data_to_rdma_requester] Wait till the requester has finished the submission of the receive task for negotiation and press enter
+[16:07:20:980524][387124][DOCA][INF][rdma_common.c:1468][rdma_responder_send_data_to_rdma_requester] [等待元数据交换控制信息耗时：] 用时: 0.01 ms
+[16:07:20:980607][387124][DOCA][INF][rdma_write_responder_sample.c:227][responder_wait_for_requester_finish_chunked] 开始接收分块数据
+[16:07:20:980614][387124][DOCA][INF][rdma_write_responder_sample.c:239][responder_wait_for_requester_finish_chunked] 等待第 1 块数据
+[16:07:21:003419][387124][DOCA][INF][rdma_write_responder_sample.c:243][responder_wait_for_requester_finish_chunked] [等待 块数据 耗时  ] 用时: 22.79 ms
+[16:07:21:003454][387124][DOCA][INF][rdma_write_responder_sample.c:244][responder_wait_for_requester_finish_chunked] 收到写完成信号
+[16:07:21:003463][387124][DOCA][INF][rdma_write_responder_sample.c:251][responder_wait_for_requester_finish_chunked] 接收到块 1/1，数据大小: 46830571，总数据: 46830571，是否最后: 1
+[16:07:21:003472][387124][DOCA][INF][rdma_write_responder_sample.c:260][responder_wait_for_requester_finish_chunked] 预计接收 1 块，总大小 46830571 字节
+[16:07:21:065557][387124][DOCA][INF][rdma_write_responder_sample.c:281][responder_wait_for_requester_finish_chunked] [读取 块数据 耗时  ] 用时: 62.09 ms
+[16:07:21:065585][387124][DOCA][INF][rdma_write_responder_sample.c:282][responder_wait_for_requester_finish_chunked] 已接收 1/1 块，累计数据: 46830571 字节
+[16:07:21:065627][387124][DOCA][INF][rdma_write_responder_sample.c:288][responder_wait_for_requester_finish_chunked] 已发送第 1 块的 ACK
+[16:07:21:065632][387124][DOCA][INF][rdma_write_responder_sample.c:292][responder_wait_for_requester_finish_chunked] 接收完成，总共 1 块，46830571 字节
+[16:07:21:065637][387124][DOCA][INF][rdma_write_responder_sample.c:298][responder_wait_for_requester_finish_chunked] [分块接收总耗时    ] 用时: 85.02 ms
+[16:07:21:065643][387124][DOCA][INF][rdma_write_responder_sample.c:302][responder_wait_for_requester_finish_chunked] ✓ 数据接收完整: 46830571 字节
+[16:07:21:065648][387124][DOCA][INF][rdma_write_responder_sample.c:312][responder_wait_for_requester_finish_chunked] 最终接收数据大小: 46830571
+[16:07:21:068740][387124][DOCA][INF][rdma_common.c:1269][rdma_cm_disconnect] [Server] successfully disconnect rdma-cm connection
+[16:07:21:068760][387124][DOCA][INF][rdma_write_responder_sample.c:374][rdma_write_responder_state_change_callback] RDMA context entered into stopping state. Any inflight tasks will be flushed
+[16:07:21:069438][387124][DOCA][INF][rdma_write_responder_sample.c:379][rdma_write_responder_state_change_callback] RDMA context has been stopped
+[16:07:21:134949][387124][DOCA][ERR][doca_argp.cpp:2532][doca_argp_destroy] Module is not ready for use
+[16:07:21:134973][387124][DOCA][INF][rdma_write_responder_my.c:149][rdma_write_responder_my] Sample finished successfully
+[Responder:13840] 接收到 46830571 字节, MD5: e0b1c919e74f9a193d36871d9964bf7d
